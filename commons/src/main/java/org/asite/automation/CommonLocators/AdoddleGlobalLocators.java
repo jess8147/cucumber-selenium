@@ -1,0 +1,252 @@
+package org.asite.automation.CommonLocators;
+
+import org.openqa.selenium.By;
+
+public class AdoddleGlobalLocators {
+
+	public static class GlobalPageElements {
+
+		public static By	css_LinkElements									= By.cssSelector("a");
+		public static By	txt_WebMailLVNewToField								= By.cssSelector("table[class='mnTbl'] table[class='edtMsg'] input[id='txtto']");
+		public static By	txt_WebMailLVNewSubject								= By.cssSelector("table[class='mnTbl'] table[class='edtMsg'] input[id='txtsbj']");
+		public static By	img_WebMailLVAttachFileLink							= By.cssSelector("table[class='edtMsg'] img[src*='attch.png']");
+		public static By	txt_WebMailLVContent								= By.cssSelector("table[class='mnTbl'] table[class='wh100'] td[class='h100'] textarea");
+		public static By	btn_WebMailLVAttachButton							= By.cssSelector("table[class='attchfrm'] input[id='attachbtn']");
+		public static By	lnk_WebMailLVAttachMentDone							= By.cssSelector("table[class='mnTbl'] table[class='tbhd'] a[id='lnkHdrdone']");
+		public static By	lnk_WebMailLVSignout								= By.cssSelector("table[class='mnTbl'] table[class='ob'] a[id='lo']");
+		public static By	ele_WebMailLVAttachFileBrowse						= By.cssSelector("table[class='attchfrm'] input[type='file']");
+		public static By	lnk_FirstMyActionCountPopOver						= By.cssSelector("div[id='adTableBody'] div[class*='rows']:nth-child(1) div[class*='col-actions'] span[class='multiobjcount']");
+		public static By	pop_firstActionsPopOverContent						= By.xpath(".//div[contains(@style,'display: block;')]//div[@class='popover-content']//div[@data-index]");
+		public static By	css_firstActionsPopoverContentLinks					= By.xpath(".//div[contains(@style,'display: block;')]//div[@class='popover-content']//a[@class='completeAction']//div[contains(@style,'left')]");
+		public static By	css_firstActionsPopoverDueDaysContents				= By.xpath(".//div[contains(@style,'display: block;')]//div[@class='popover-content']//a[@class='completeAction']//div[@class='right']");
+		public static By	img_firstActionsPopoverActionCompleted				= By.xpath(".//div[contains(@style,'display: block;')]//div[@class='popover-content']//div[@data-index='0']//div[@class='right']//img[@alt='completed']");
+		public static By	css_FilesTabMyActionCountPopOverPlusImageList		= By.xpath(".//div[@index]//div[contains(@class,'actionName')]//span[contains(text(),'+')]");
+		public static By	css_firstActionPopoverActionsCompletedList			= By.xpath(".//div[contains(@style,'display: block;')]//div[@class='popover-content']//div[contains(@style,'color: black')]");
+		public static By	pop_PopUpElement									= By.cssSelector("div[class='modal-scrollable'][style*='z-index'] div[aria-hidden='false']");
+		public static By	pop_MoreOptionsPopUpElement							= By.cssSelector("div[id='fileListingControls'] div[id*='moreoptions']");
+		public static By	btn_PopUpElementClose								= By.cssSelector("div[class='modal-scrollable'][style*='z-index'] div[aria-hidden='false'] button[class='close']");
+		public static By	lbl_PopUpHeader 									= By.cssSelector("div[class='modal-scrollable'][style*='z-index'] div[aria-hidden='false'] div[class*='modal-header']");
+		public static By	lbl_PopUpHeader1									= By.cssSelector("div[class='modal-scrollable'][style*='z-index'] div[aria-hidden='false'] h3");
+		public static By	lbl_PopUpHeader3									= By.cssSelector("div[class='modal-scrollable'][style*='z-index'] div[id='moreoptions_Comment'] h3");
+		public static By	lbl_SuccessMessage									= By.cssSelector("div[id='adoddleTopMsgBox'] span");
+		public static By	lnk_ActiveTab										= By.cssSelector("div[id='menuNav'] li[class='active'] a");
+		public static By	lnk_ActiveSubTab									= By.cssSelector("a[class='active']");
+		public static By	ele_overLayProcess									= By.cssSelector("div[class='overlay-filter-process']");
+		public static By	img_LoadingProcess									= By.cssSelector("div[class='loading'] img[src*='loading.gif']");
+		public static By	ele_LoadingCircle									= By.cssSelector("div[class*='loading'] div[class='loader_new']");
+		public static By	ele_Loader											= By.cssSelector("div[class='loading']");
+		public static By 	img_XDocCallBackProcess								= By.cssSelector("div[id*='xdoc_progress']");
+		public static By	btn_FilterProject									= By.cssSelector("div[id='headerProjectFilter'] ul[class='criteria-list'] button[filterkey='project']");
+		public static By	lbl_FilterProject									= By.cssSelector("div[id='headerProjectFilter'] button[filterkey='project'] div[class='criteria-wrap']");
+		public static By	txt_FilterProjectInput								= By.cssSelector("div[class*='filterui'] div[class*='filter-layer-box'] input[filterkey='project']");
+		public static By	lnk_FilterProjectShowAll							= By.cssSelector("div[class*='filterui'] div[class*='filter-layer-box'] a[class*='show-all']");
+		public static By	lbl_FavouriteProjects								= By.xpath(".//ul[contains(@class,'list-section')]//label[@title='Favourite Projects']");
+		public static By	chk_FilterProjectFirstProject						= By.cssSelector("div[id='assignee-suggestions'] div[class*='filterui-list-scroll'] ul[id='ui-id-1'] li[class*='check-list-item']:nth-child(1) input");
+		public static By	chk_FilterProjectFirstProjectSelected				= By.cssSelector("div[class='filterui-list-scroll'][style*='opacity: 1'] li[class*='focus']:nth-child(1) a input[class='selected']");
+		public static By	lnk_FilterClose										= By.cssSelector("div[class*='filterui'] div[class*='filter-layer-box'] a[class*='apply-all']");
+		public static By	lnk_FilterProjectClearAll							= By.xpath("//li[not(contains(@style,'display:none'))]//a[text()='Clear']");
+		public static By	lnk_FilterProjectDisableClear						= By.xpath("//li[not(contains(@style,'display:none'))]//a[contains(@class,'disabled') and text()='Clear']");
+		public static By	lnk_HeaderNotificationClose							= By.cssSelector("div[id='wrap'] div[id='header'] div[id='noticeInfo'] button[class*='close']");
+		public static By	btn_DynamicModelDisMiss								= By.cssSelector("div[id='dismis_button'] button");
+		public static By	ele_FilterProjectSelectedProjectName				= By.xpath(".//div[@id='headerProjectFilter']//button[@filterkey='project']//span[text()]");
+		public static By	css_GlobalListingHeaderColumns						= By.cssSelector("div[id='listing'] div[id='adTableHead'] div[id*='columnId']");
+		public static By	ele_GlobalListingHeaderSortingIcon					= By.xpath(".//div[@id='adTableHead']//div[contains(@class,'divthead')]//div[contains(@title,'Sorted')]");
+		public static By	ele_GlobalListingHeaderAscendingIcon				= By.cssSelector("div[id='adTableHead'] div[class*='divthead'] div[alt*='ascending']");
+		public static By	ele_GlobalListingHeaderDescendingIcon				= By.cssSelector("div[id='adTableHead'] div[class*='divthead'] div[alt*='descending']");
+		public static By	css_GlobalListingPaginationCount					= By.xpath(".//div[contains(@id,'paging') or contains(@id,'Paging')]//ul//li[contains(@title,'Page ')]//a");
+		public static By	lnk_GlobalListingPaginationNext						= By.cssSelector("div[id*='paging'] ul li[class=''][title*='Next Page'] a");
+		public static By	lnk_GlobalFilterCloseLink							= By.cssSelector("a[class*='apply-all']");
+		public static By	txt_PopSwitchProxyUserInput							= By.cssSelector("div[class='modal-scrollable'][style*='z-index'] input[id='proxy-user-search-input']");
+		public static By	css_PopSwitchUserUserList							= By.cssSelector("div[class='modal-scrollable'][style*='z-index'] div[id='myModal-switch-proxy-user'] div[class*='boxgrid']");
+		public static By	lnk_IncompleteActionCount							= By.xpath(".//a[contains(@id,'incomplete')]//span[@title]");
+		public static By	lnk_DueTodayCount									= By.xpath(".//a[contains(@id,'duetoday')]//span[@title]");
+		public static By	lnk_DatePickerCalenderToday							= By.cssSelector("div[class*='ui-datepicker'] table[class*='ui-datepicker-calendar'] td[class*='ui-datepicker-days-cell-over']");
+		public static By	lnk_DatePickerMonthPrevious							= By.cssSelector("div[class='hasDatepicker'] a[title='Previous']");		
+		public static By	lbl_PageTitle										= By.cssSelector("tbody tr td[class='title']");
+		public static By	drp_GlobalListingCreateFilter						= By.cssSelector("div[id*='moreFilterCriteria'] button[class*='criteria-selector'][filterkey='more']");
+		public static By	txt_GlobalListingCreateFilterSearch					= By.cssSelector("div[class='check-list-select'] input[class*='check-list-field'][filterkey='more']");
+		public static By	txt_GlobalListingCreatedFilterDropDownSearch		= By.cssSelector("div[class*='filterui'] div[class*='filter-layer-box'][style*='display: block'] input[type='text']");
+		public static By	css_GlobalListingCreateFilterFilteredLabels			= By.cssSelector("div[class*='filterui'] div[class*='box-shadow'][class*='active'] div[class='check-list-select'] div[class='filterui-list-scroll'] ul[id*='ui-id-'][style*='display: block'] li label");
+		public static By	ele_PleaseWaitLoadingDataMessage					= By.cssSelector("div[id='loadingDataMsg'][style*='display: block']");
+		public static By	chk_PopFilterListScrollFirstSearchResult			= By.cssSelector("div[class='filterui top-label'] div[class*='filter-layer-box'] div[class='filterui-list-scroll'] li:nth-child(1) a[id*='ui-id'] input");
+		public static By	lbl_PopFilterListScrollFirstSearchResult			= By.cssSelector("div[class='filterui top-label'] div[class*='filter-layer-box'] div[class='filterui-list-scroll'] li:nth-child(1) a[id*='ui-id'] strong");
+		public static By	btn_ActiveTabSettingDropdownButton					= By.xpath(".//div[contains(@class,'listing-setting')]//a[@class='btn btn-default dropdown-toggle']");
+		public static By	btn_ActiveTabSettingDropdownCloseButton				= By.xpath(".//div[contains(@class,'listing-setting')][contains(@class,'open')]//a[@class='btn btn-default dropdown-toggle']");
+		public static By	lnk_ActiveTabDistributionTab						= By.xpath(".//div[@id='docListingSection']//ul[@class='sublisting-type']//li//a[contains(text(),'Distribution')]");
+		public static By	img_AsiteLogoImage									= By.xpath(".//div[@id='header']//span[@title='Asite Logo']");
+		public static By	lbl_ActiveTabListingCount							= By.xpath(".//div[@class='tab-listing-footer']//div[@class='listing-records-details'][text()]");
+
+		/* View File/Form/aMessage/Model for BetaView */
+		public static By	lbl_BetaViewActiveTabDropdownPopupLabel				= By.xpath(".//div[contains(@id,'view-page')]//main[@class='open']//div[@class='ibox-title clearfix']//h5[@class][text()]");
+		public static By	lbl_BetaViewActiveTabDropdownPopupSubLabel			= By.xpath(".//div[contains(@id,'view-page')]//div[contains(@class,'open')]//h5[text()]");
+		public static By	lnk_BetaViewPopAttachmentsAndAssociationsActiveTab	= By.xpath(".//div[contains(@id,'view-page')]//main[@class='open']//ul[contains(@class,'nav-tabs')]//li[contains(@class,'active')]//a//uib-tab-heading");
+		public static By	lnk_BetaViewPopAMessagesActiveTab					= By.xpath(".//div[contains(@id,'view-page')]//main[@class='open']//ul[contains(@class,'nav-tabs')]//li[contains(@class,'active')]//a");
+		public static By	css_BetaViewPopAttachmentsAssociationsActiveTabHeaderColumnNameList	= By.xpath(".//div[contains(@id,'view-page')]//main[@class='open']//div[contains(@class,'active')]//div[@class='ghead']//ul//li");
+		public static By	css_BetaViewPopAMessagesActiveTabHeaderColumnNameList	= By.xpath(".//div[contains(@id,'view-page')]//main[@class='open']//div[@class='ghead']//ul//li");
+		public static By	chk_BetaViewPopAttachmentsAssociationsActiveTabCheckAllCheckbox		= By.xpath(".//div[contains(@id,'view-page')]//main[@class='open']//div[contains(@class,'active')]//div[@class='ghead']//input[@type='checkbox']");
+		public static By	chk_BetaViewPopAMessagesActiveTabCheckAllCheckbox	= By.xpath("//div[@class='ghead']//input[@type='checkbox']");
+		public static By	btn_BetaViewPopDownloadPreferencesButton			= By.xpath("//button[not(@disabled)][@title='Download Preferences']");
+		public static By	btn_BetaViewPopDownloadPreferencesDownloadButton	= By.xpath(".//div[contains(@class,'open')]//div[contains(@class,'download-pref-dropdown')]//button[@title='Download Files']");
+		public static By	css_BetaViewPopDownloadPreferencesCheckList			= By.xpath(".//div[contains(@class,'open')]//div[contains(@class,'download-pref-dropdown')]//input[@type='checkbox']");
+		public static By	txt_BetaViewPopCreateDiscussionDistributeTo			= By.xpath(".//main[@class='open']//div[@class='ibox']//div[@class='dropdown-toggle']//input[@placeholder='To'][@type='text']");
+		public static By	lnk_BetaViewPopCreateDiscussionDistributeToClearButton	= By.xpath(".//main[@class='open']//div[@class='ibox']//div[contains(@class,'bulk-apply')]/a[text()='Clear']");
+		public static By	lnk_BetaViewPopCreateDiscussionDistributeToCloseButton	= By.xpath(".//main[@class='open']//div[@class='ibox']//div[contains(@class,'bulk-apply')]/a[text()='Close']");
+		public static By	txt_BetaViewPopCreateDiscussionTitle				= By.xpath(".//main[@class='open']//div[@class='ibox']//input[@placeholder='Title'][@type='text']");
+		public static By	txt_BetaViewPopCreateDiscussionTextarea				= By.xpath(".//main[@class='open']//div[@class='ibox']//div[contains(@id,'taTextElement')]");
+		
+		/* View Project */
+		public static By	css_SearchFilterProjectsCheckboxList				= By.xpath(".//ul[contains(@class,'suggested-projects')]//li//label//input[@type='checkbox']");
+		public static By	img_UkCountryLabel									= By.xpath(".//div[@id='calendar-drop-test']//img[contains(@id,'GB')]");
+		public static By	img_UsCountryLabel									= By.xpath(".//div[@id='calendar-drop-test']//img[contains(@id,'US')]");
+		public static By	img_AusCountryLabel									= By.xpath(".//div[@id='calendar-drop-test']//img[contains(@id,'AU')]");
+		public static By	css_SearchFilterNonFavouriteProjectsList			= By.xpath(".//ul[contains(@class,'suggested-projects')]//li//label//div");
+
+		/* Invite Users */
+		public static By	txt_WebMailUserNameInput							= By.cssSelector("body[class='owaLgnBdy'] table[id='tblMid'] input[id='username']");
+		public static By	txt_WebMailPasswordInput							= By.cssSelector("body[class='owaLgnBdy'] table[id='tblMid'] input[id='password']");
+		public static By	btn_WebMailSignIn									= By.cssSelector("body[class='owaLgnBdy'] table[id='tblMid'] input[value='Sign in']");
+		public static By	lnk_WebNewMail										= By.xpath(".//a[contains(@id,'newmsg')]//span[text()='New']");
+		public static By	ele_WebMailFirstEmailUnreadSubject					= By.cssSelector("div[class='mainView']:last-child div[id='divViewport'] div[id='gc']:nth-child(2) div[id='vr']:nth-child(1) div[id='divSubject'][class*='ur']");
+		public static By	lbl_WorkspaceInvitationValidationLabel				= By.cssSelector("div[id='banner'] h2[class='banner_title']");
+		public static By	lbl_WorkspaceInvitationExpirationLabel				= By.cssSelector("div[class='thank-you'] div[class='image_title'] h3[style*='margin-top']");
+		public static By    lnk_CreateAccountClickingHere						= By.cssSelector("ul[class='instructions'] a[href*='sign-up-for-an-asite-account']");
+		public static By    ele_SignUpAsiteAccountForm							= By.cssSelector("div[id='divCreateAccount'] form[class='createAccountForm']");
+		public static By    txt_SignUpAsiteAccountFormFirstName					= By.cssSelector("div[id='divCreateAccount'] form[class='createAccountForm'] input[id*='firstName']");
+		public static By    txt_SignUpAsiteAccountFormLastName					= By.cssSelector("div[id='divCreateAccount'] form[class='createAccountForm'] input[id*='lastName']");
+		public static By	chk_WebMailLighVersion								= By.cssSelector("table[id='tblMain'] table[id='tblMid'] tbody input[id='chkBsc']");
+		public static By	lnk_WebMailLVNew									= By.cssSelector("table[class='mnTbl'] a[id='lnkHdrnewmsg']");
+		public static By	lnk_WebMailExpandInbox								= By.cssSelector("div[id='mailtree'] div[id='divTrNdO'] div[class='trNdHl'] img[id='ec'][class*='sprites-plus-png']");
+		public static By	ele_WebMailContent									= By.cssSelector("div[class='mainView']:nth-child(2) div[id='divVw'] div[id='divBdy']");
+		public static By	lnk_WebMailLVSend									= By.cssSelector("table[class='mnTbl'] table[class='tbhd'] a[id='lnkHdrsend']");
+		public static By	ele_WebmailFolderNotifications						= By.cssSelector("div[id='mailtree'] div[id='divTrNdO'] span[id='spnFldrNm'][fldrnm='Notifications']");
+		public static By	chk_GlobalListingCreateFilterFilteredFirstCheckbox	= By.cssSelector("div[class*='filterui'] div[class*='box-shadow'][class*='active'] div[class='check-list-select'] div[class='filterui-list-scroll'] ul[id*='ui-id-'][style*='display: block'] li:nth-child(1) input");
+		public static By	btn_DownloadDocAssocClickHereToSaveFile				= By.cssSelector("form[name='zipDownloadFrm'] input[id='btnDownload']");
+		public static By	css_AdoddleAllTabColoumsNameList					= By.xpath(".//div[@id='adTableHead']//div[contains(@id,'columnId')]//span[not(contains(@class,'resize'))][not(contains(@style,'hidden'))][not(contains(@id,'ImageName'))][not(contains(@id,'ImgName'))][not(contains(@id,'favImagePath'))][not(contains(@id,'activityLockImage'))] | //div[@id='adTableHead']//div[contains(@id,'columnId')]//img[@title]");
+		public static By	css_AdoddleDiscussionsTabColoumsNameList			= By.xpath(".//div[@id='adTableHead']//div[contains(@id,'columnId')]//span[not(contains(@class,'resize'))][not(contains(@style,'hidden'))][not(contains(@id,'ImageName'))][not(contains(@id,'typeImage'))] | //div[@id='adTableHead']//div[contains(@id,'columnId')]//img[@title]");
+		public static By	btn_CustomizeButton									= By.xpath(".//div[contains(@class,'listing-setting')][contains(@class,'open')]//a[@title='Customise']");
+		public static By	btn_CustomizeDropdownSaveButton						= By.xpath(".//div[contains(@class,'listing-setting')][contains(@class,'open')]//input[@value='Save']");
+		public static By	drp_CustomizeSelectedFieldsDropdown					= By.xpath(".//div[@id='bodyPart']//div[@class='selectedField']//select[@class='listbox']");
+		public static By	btn_CustomizeMoveToAvailableFieldsButton			= By.xpath(".//div[@id='moveToAvailableItem']");
+		public static By	drp_CustomizeAvailableFieldsDropdown				= By.xpath(".//div[@id='bodyPart']//div[@class='available']//select[@class='listbox']");
+		public static By	btn_CustomizeMoveToSelectedFieldsButton				= By.xpath(".//div[@id='moveToSelectedItem']");
+		public static By	css_CustomizeSelectedFieldsDropdownOptionsList		= By.xpath(".//div[@id='bodyPart']//div[@class='selectedField']//select[@class='listbox']//option");
+		public static By	css_CustomizedAvailableFieldsDropdownOptionsList	= By.xpath(".//div[@id='bodyPart']//div[@class='available']//select[@class='listbox']//option");
+		public static By	btn_CustomizeMoveUpButton							= By.xpath(".//div[@id='moveUp']");
+		/*
+		public static By	chk_FavouriteProjectsCheckbox						= By.xpath(".//ul[contains(@class,'list-section')]//label[@title='Favourite Projects']//input");
+		public static By	frm_GlobalIframe									= By.cssSelector("iframe");
+		public static By	lnk_FirstProject									= By.cssSelector("div[class='tree-children'] div[id*='ws_']:nth-child(1) div[class*='selected'] a[class='docList'] span[class='tree-label']");
+		public static By	lnk_WebMailEmailClickHere							= By.cssSelector("div[class='mainView']:nth-child(2) table[width='98%'] tr:nth-child(4) a");
+		public static By	lbl_PopUpHeader2									= By.cssSelector("div[class='modal-scrollable'][style*='z-index'] div[aria-hidden='false'] h2");
+		public static By	lbl_IncludeTemplates								= By.xpath(".//ul[contains(@class,'list-section')]//label[@title='Include Templates']");
+		public static By	btn_Download										= By.xpath(".//div[@aria-hidden='false']//button[@id='download' and text()='Download']");
+		public static By	lnk_HeaderNotificationDismiss						= By.cssSelector("div[id='wrap'] div[id='header'] div[id='noticeInfo'] div[id='dismiss'] a");
+		public static By	lnk_PopSwitchUserFilteredUser						= By.cssSelector("div[class='modal-scrollable'][style*='z-index'] div[id='myModal-switch-proxy-user']  div[class*='boxgrid-active']");
+		public static By	ele_GlobalFilterResetAll							= By.cssSelector("div[class='container-fluid'] div[id='docListingSection'] div[id='savedFilters'] li[listfilterkey='Active'] i[id='filterResetAll']");
+		public static By	css_GlobalListingCreateFilterFilteredItems			= By.cssSelector("div[class*='filterui'] div[class*='box-shadow'][class*='active'] ul[id*='ui-id'] li[class*='check-list-item'] label");
+		public static By	lbl_GlobalListingCreateFilterFilteredFirstLabel		= By.cssSelector("div[class*='filterui'] div[class*='box-shadow'][class*='active'] div[class='check-list-select'] div[class='filterui-list-scroll'] ul[id*='ui-id-'][style*='display: block'] li:nth-child(1) a label");
+		public static By	css_GlobalListingCreateFilterFilteredChekboxes		= By.cssSelector("div[class*='filterui'] div[class*='box-shadow'][class*='active'] div[class='check-list-select'] div[class='filterui-list-scroll'] ul[id*='ui-id-'][style*='display: block'] li input");
+		public static By	img_WebMailInboxExpander							= By.cssSelector("div[id='Mail'] div[id='mailtree'] div[id='divTrNdCC'] img[id='ec']:nth-child(2)");
+		public static By	ele_WebMailFirstEmailSubject						= By.cssSelector("div[class='mainView']:last-child div[id='divViewport'] div[id='gc']:nth-child(2) div[id='vr']:nth-child(1) div[id='divSubject']");
+		public static By	ele_WebMailSecondEmailUnreadSubject					= By.cssSelector("div[class='mainView']:last-child div[id='divViewport'] div[id='gc']:nth-child(2) div[id='vr']:nth-child(3) div[id='divSubject'][class*='ur']");
+		public static By	ele_WebMailSecondEmailReadSubject					= By.cssSelector("div[class='mainView']:last-child div[id='divViewport'] div[id='gc']:nth-child(2) div[id='vr']:nth-child(3) div[id='divSubject']");
+		public static By	lnk_WebMailUserInvitationsInbox						= By.xpath(".//span[@fldrnm='User Invitations']");
+		public static By	ele_WebMailUserInvitationsUnreadCount				= By.xpath(".//div[@id='divTrNdHl']//a[@_sel='1']//span[@id='spnCV' and text()='2']");
+		public static By	ele_WebMailWorkspaceName							= By.xpath(".//div[@id='divExp']//div[@id='divBdy']//table[@width='80%']//tr[1]//td[@style='width:88%;']");
+		public static By	ele_WebMailWorkspaceRole							= By.xpath(".//div[@id='divExp']//div[@id='divBdy']//table[@width='80%']//tr[2]//td[@style='width:88%;']");
+		public static By	lnk_WebMailAcceptInvitationsLink					= By.xpath(".//div[@id='divBdy']//tr[4]//a[text()='here']");
+		public static By	lnk_WebMailDeclineInvitationsLink					= By.xpath(".//div[@id='divBdy']//tr[5]//a[text()='here']");
+		public static By	lbl_SignupAsiteAccount								= By.xpath(".//div[@id='divHeaderCreateAccount']//h1[text()]");
+		public static By	img_CreateAccount									= By.xpath(".//a[contains(@href,'create-account')]/img[@title='Create Account']");
+		public static By 	lbl_WebMailContentTableFormTitle					= By.cssSelector("div[class='mainView']:nth-child(2) div[id='divVw'] div[id='divBdy'] table tr[style*='background-color:white'] td:nth-child(3)");
+		public static By	lbl_WebMailContentChangeRequestFormPrintView		= By.cssSelector("div[id='divExp'] div[id='divBdy'] table tr td[style*='background-color:green'] span[style*='font-size']");
+		public static By	ele_WebmailFolderEmbededEmailResponse				= By.cssSelector("div[id='mailtree'] div[id='divTrNdO'] span[id='spnFldrNm'][fldrnm='Embeded Email Response']");
+		public static By	img_WebMailCurrentEmailReply						= By.cssSelector("div[id='divMainView'] div[class='mainView']:nth-child(2) div[id='divActionIcons'] img[id='imgReplyIcon']");
+		public static By	btn_WebMailEmailSend								= By.cssSelector("div[id='divHdrMessage'] a[id='send']");
+		public static By	txt_WebMailReplyBody								= By.cssSelector("html body");
+		public static By	frm_WebMailReplyBodyFrame							= By.cssSelector("iframe[id='ifBdy']");
+		public static By	lnk_WebMailSignOut									= By.cssSelector("div[id='divNavHostBody'] div[id='divLogOff'] a[id='aLogOff']");
+		public static By	lnk_WebMailLVEmbededEmailResponseFirstEmail			= By.cssSelector("table[class='mnTbl'] div[class='cntnt'] table[class='lvw'] tbody tr:nth-child(3) a");
+		public static By	lnk_WebMailLVEmbededEmailResponseSecondEmail		= By.cssSelector("table[class='mnTbl'] div[class='cntnt'] table[class='lvw'] tbody tr:nth-child(4) a");
+		public static By	lnk_WebMailLVEmbededEmailResponseFolder				= By.cssSelector("table[class='snt'] a[title='Embeded Email Response']");
+		public static By	lnk_WebMailLVEnableBlockedFeatureLink				= By.cssSelector("table[class='msgHd'] td[id='tdInf'] div[id='dvInf'] a[id='aIbBlk']");
+		public static By	lnk_WebMailLVMailReply								= By.cssSelector("table[class='tbhd'] a[id='lnkHdrreply']");
+		public static By	txt_WebMailLVReplyTextArea							= By.cssSelector("table[class='mnTbl'] table[class='bdyt'] textarea[title='Message Body']");
+		public static By	chk_GlobalListingCreateFilterFilteredSecondCheckbox	= By.cssSelector("div[class*='filterui'] div[class*='box-shadow'][class*='active'] div[class='check-list-select'] div[class='filterui-list-scroll'] ul[id*='ui-id-'][style*='display: block'] li:nth-child(2) input");
+		public static By	btn_SaveFilterButton								= By.cssSelector("button[id='filterSave'][title='Save Filter'] i[class*='fa-save']");
+		public static By	lnk_ActiveTabListView								= By.cssSelector("a[title='List View'][class*='active']");
+		public static By	img_AngularDatePickerImage							= By.cssSelector("img[class='ang-datepicker-icon']");
+		public static By 	lnk_Office365FoldersMore 							= By.cssSelector("div[aria-label*='More folders'] span[title='More']");
+		*/
+
+		/* Manage Dashboard */
+		public static By	chk_FilterDropdownFirstSuggestedTypeCheckbox		= By.xpath(".//div[@id='assignee-suggestions']//ul[contains(@class,'suggested')]//li[1]//label//input[@type='checkbox']");
+		public static By	css_FilterDropdownSelectedTypeCheckboxList			= By.xpath(".//div[@id='assignee-suggestions']//ul[contains(@class,'selected')]//label[@title]");
+		public static By	css_FilterDropdownSuggestedTypeList					= By.xpath(".//div[@id='assignee-suggestions']//ul/li[@class='check-list-item']//label[@title]");
+		public static By	txt_PopSaveFilterInput								= By.xpath(".//div[contains(@style,'display: block')]//input[@id='filterNameInput']");
+		public static By	btn_SavedFilterButton								= By.xpath(".//div[@id='fileContentContainer']//div[@id='savedFilters']//button[@id='savedFilterButton']");
+		public static By	btn_SavedFilterButtonToolTip						= By.cssSelector("div[id='filterTooltip'][role='tooltip'][style*='top']");
+		public static By	css_SavedFilterList									= By.xpath(".//div[contains(@style,'display: block')]//ul//li[@class='file-check-list-item']//label[contains(@id,'filter')][text()]");
+		public static By	btn_SearchProjectFilterButton						= By.xpath(".//div[@id='headerProjectFilter']//ul[@class='criteria-list']/li[@listfilterkey='project']//button");
+		public static By	btn_SavedFilterToggleButton							= By.cssSelector("div[id='fileContentContainer'] button[id='filterSave']+button[class*='dropdown-toggle']");
+		public static By	lnk_SavedFilterDeleteButton							= By.xpath(".//div[@id='fileContentContainer']//a[@id='filterDelete']//i[@class='icon-trash']");
+		public static By	btn_ActionDueDateFilterButton						= By.xpath(".//div[@fieldname='due_date']//button[@id='btnrangeFilter']");
+		public static By	sel_DateFilterNextRadioButton						= By.xpath(".//div[@id='dateContainer']//input[contains(@id,'rpt')][@type='radio'][@selectedvalue='Next']");
+		public static By	txt_DateFilterNumericValuesInput					= By.xpath(".//div[@id='dateContainer']//input[@id='txtwithinlast'][@type='number']");
+		public static By	drp_DateFilterTimeZoneDropdown						= By.xpath(".//div[@id='dateContainer']//select[@id='drpwithinlast']");
+		public static By	btn_DateFilterUpdateButton							= By.xpath(".//div[@id='rangecompContainer']//input[@id='btnupdate']");
+		public static By	lnk_MoreOptions										= By.cssSelector("div[class*='more-options'] a[class*='MoreOptions']");
+		public static By	drp_ShowNumberOfListDropdown						= By.xpath(".//select[@id='optshow']");
+		public static By	css_ActiveTabListingPageCheckboxList				= By.xpath(".//div[@index]//div[contains(@class,'chkbox')]//input[@type='checkbox']");
+		public static By	txt_FileFormDistributeToFieldInput					= By.xpath(".//div[contains(@id,'s2id_inptDistTo')]//ul[@class='select2-choices']//input");
+		public static By	ele_FileFormHistoryFirstRecord						= By.cssSelector("div[class*='nopadding-box-lower'] div[id*=AllHistoryList] div[class*='historyRow']:nth-child(1)");
+		public static By	css_FileFormViewActionDistributionRecords			= By.cssSelector("div[id*='AllHistoryContainer'] div[class='actionTable historyMax'] div[class*='actionRow']");
+		public static By	css_BetaViewViewFormActionDistributionRecords		= By.xpath(".//div[@id='form-view-page']//main[@class='open']//form-history//ul[@class='grow dist'][@ng-class]");
+		public static By	css_BetaViewViewFileActionDistributionRecords		= By.xpath(".//div[@id='file-view-page']//main[@class='open']//file-history//ul[@class='grow dist'][@ng-class]");
+		public static By	btn_AlertModalOK									= By.cssSelector("div[class='modal-scrollable'] div[id='adoddleAlertUI'] button[id='okButton']");
+		
+		/* Global Federated Search */
+		public static By	txt_GlobalSearchInput								= By.xpath(".//input[@id='search'][@placeholder='Search Adoddle']");
+		public static By	btn_GlobalSearchButton								= By.xpath(".//button[@id='search_btn'][@type='button']");
+		public static By	lnk_GlobalSearchFilesLHTab							= By.xpath(".//a[contains(@id,'search-documents')]");
+		public static By	lnk_GlobalSearchDiscussionsLHTab					= By.xpath(".//a[contains(@id,'search-comment')]");
+		public static By	lnk_GlobalSearchAppsLHTab							= By.xpath(".//a[contains(@id,'search-procurement')]");
+		public static By	lnk_GlobalSearchModelsLHTab							= By.xpath(".//a[contains(@id,'search-models')]");
+		public static By	css_GlobalSearchAppsTitleList						= By.xpath(".//div[@index]//div[contains(@class,'title')][text()]");
+		public static By	css_GlobalSearchModelsTitleList						= By.xpath(".//div[@class='boxgrid']//div[@class='box-projectname']");
+	}
+	
+	public static class Outlook365Locators {
+		public static By    lnk_Office365SignInLink 							= By.cssSelector("a[id='hero-banner-sign-in-to-office-365-link']");
+		public static By 	txt_Office365EmailInput								= By.cssSelector("input[name='loginfmt']");
+		public static By 	btn_Office365NextButton 							= By.cssSelector("input[value='Next']");
+		public static By 	txt_Office365PasswordInput 							= By.cssSelector("input[name='passwd']");
+		public static By 	btn_Office365SignInButton 							= By.cssSelector("input[value='Sign in']");
+		public static By    btn_Office365StaySingedInNo							= By.cssSelector("input[id='idBtn_Back'][value='No']");
+		public static By 	lnk_Office365OutLook 								= By.cssSelector("div[id='ShellMail_link_text']");
+		public static By 	btn_Office365UserProfile 							= By.cssSelector("button[id='O365_MeFlexPane_ButtonID']");
+		public static By 	lnk_Office365SignOutLink 							= By.cssSelector("a[id='O365_SubLink_ShellSignout']");
+		public static By    lbl_Office365SingedOutLabel							= By.cssSelector("div[class='outer'] div[id='login_workload_logo_text']");
+		public static By 	img_Office365InboxChevronDown 						= By.cssSelector("div[aria-label='Folder Pane'] div[class*='subfolders'] div[aria-haspopup='true'] span[class*='ms-Icon--chevronDown']");
+		public static By 	img_Office365InboxChevronUp 						= By.cssSelector("div[aria-label='Folder Pane'] div[class*='subfolders'] div[aria-haspopup='true'] span[class*='ms-Icon--chevronUp']");
+		public static By	ele_Office365FirstEmailUnreadSubject				= By.cssSelector("div[aria-label='conversation'] div[data-convid]:nth-child(2) div[class*='ms-fwt-sb']");
+		public static By	ele_Office365SecondEmailUnreadSubject				= By.cssSelector("div[aria-label='conversation'] div[data-convid]:nth-child(3) div[class*='ms-fwt-sb']");
+		public static By	ele_Office365FirstEmailSubject						= By.cssSelector("div[aria-label='conversation'] div[data-convid]:nth-child(2) span[class='_lvv_V']");
+		public static By	ele_Office365SecondEmailSubject						= By.cssSelector("div[aria-label='conversation'] div[data-convid]:nth-child(3) span[class='_lvv_V']");
+		public static By	ele_Office365MailContentMessage						= By.cssSelector("[role='document'] div[id='Item.MessagePartBody'] table[width='98%'] tr:nth-child(2) td");
+		public static By	ele_Office365MailContent							= By.cssSelector("[role='document'] div[id='Item.MessagePartBody']");
+		public static By	lnk_Office365ShareLinkEmailClickHere				= By.cssSelector("div[role='document'] div[id='Item.MessagePartBody'] table[width='98%'] tr:nth-child(4) a");
+		public static By    lbl_Office365EmbededMailContentTableFormTitle		= By.cssSelector("div[id='x_xdoc_view'] textarea[id*='ORI_FORMTITLE']");
+		public static By 	btn_Office365EmailReplyAll							= By.cssSelector("div[aria-label='Mail Actions'] button[aria-label='Reply all']");
+		public static By    txt_Office365EmailReplyTextArea						= By.cssSelector("div[aria-label='Message body'][contenteditable='true']");
+		public static By    btn_Office365EmailReplySend							= By.cssSelector("button[title='Send'][aria-label='Send']");
+		public static By    ele_Office365EmailRepliedContent					= By.cssSelector("div[aria-label='Message Contents'] div[aria-label='Collapsed Message Contents'] span[class*='rpHighlightBodyClass']");
+		public static By    ele_Office365EmailContentWorkspaceName				= By.cssSelector("div[id='Item.MessagePartBody'] tbody tr:nth-child(1) td[width='88%']");
+		public static By	ele_Office365EmailContentWorkspaceRole				= By.cssSelector("div[id='Item.MessagePartBody'] tbody tr:nth-child(2) td[width='88%']");
+		public static By	lnk_Office365EmailContentAcceptInvitationsLink		= By.cssSelector("div[id='Item.MessagePartBody'] tbody a[title='To accept click here']:nth-child(2)");
+		public static By	lnk_Office365EmailContentDeclineInvitationsLink		= By.cssSelector("div[id='Item.MessagePartBody'] tbody a[title='To decline click here']:nth-child(2)");
+		public static By 	lnk_Office365FolderContextMenuMarkAllRead			= By.cssSelector("div[aria-label='Context menu'] div[role='menuitem']:nth-child(8) button[role='menuitem'] span:nth-child(2)");
+		public static By 	ele_Office365ResendInvitationFolderUnreadCount		= By.cssSelector("span[title='Resend Invitation']+div span");
+
+	}
+}

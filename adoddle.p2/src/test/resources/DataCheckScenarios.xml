@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<DataCheck>
+    <Environment id ='QA1'>
+    	    <scenario title='Create Master Form and verify Childs'></scenario>
+    	    <scenario title='Create Query Form'></scenario>
+    	    <scenario title='Publish catalogue against a contract'></scenario>
+    	    <scenario title='Create Master Form and verify Childs'></scenario>
+    	    <scenario title='Manage Design Layout for Bill to Org Users'></scenario>
+	</Environment>
+    
+    <Environment id ='QA2'>
+        	<scenario title='Create Master Form and verify Childs'></scenario>
+    </Environment>
+	
+    <Environment id ='LIVE'>
+    	<scenario title='Publish catalogue against a contract'></scenario>
+    	<scenario title='Manage Design Layout for Bill to Org Users'></scenario>
+	</Environment>
+        
+</DataCheck>
